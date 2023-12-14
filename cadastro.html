@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/cadastro.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Senninha Drive</title>
+        <script>
+            alert("Realize o seu Cadastro");
+        </script>
+    </head>
+    <body>
+        <header class=".topo-site">
+            <div class="logo_caixa">
+                <img src="assets/img/logo.png" alt="logo" width="20%" class="logo">
+            </div>
+            <div class="banner">
+                <nav class="nav_geral">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="carros.html">Carros</a></li>
+                        <li><a href="cadastro.html">Cadastro    </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1 th:text="${mensagem2}"></h1>
+        <div class="container" >
+            <a class="links" id="paracadastro"></a>
+            <a class="links" id="paralogin"></a>
+            
+            <div class="content">      
+              <!--FORMULÁRIO DE LOGIN-->
+              <div id="login">
+                <form method="post" action="/respostaForm.html" method="post"> 
+                  <h1>Login</h1> 
+                  <p> 
+                    <label for="email_login">Seu e-mail</label>
+                    <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@contato.com"/>
+                  </p>
+                  
+                  <p> 
+                    <label for="senha_login">Sua senha</label>
+                    <input id="senha_login" name="senha_login" required="required" type="password" placeholder="senha123"/> 
+                  </p>
+                  
+                  <p> 
+                    <input type="checkbox" name="manterlogado" id="manterlogado" value=""/> 
+                    <label for="manterlogado">Continuar logado?</label>
+                  </p>
+                  
+                  <p> 
+                    <input type="submit" value="Logar" /> 
+                  </p>
+                  
+                  <p class="link">
+                    Ainda não tem conta?
+                    <a href="#paracadastro">Cadastre-se</a>
+                  </p>
+                </form>
+              </div>
+        
+              <!--FORMULÁRIO DE CADASTRO-->
+              <div id="cadastro">
+                <form method="post" action="/loginForm.html"> 
+                  <h1>Cadastro</h1> 
+                  
+                  <p> 
+                    <label for="nome_cad">Seu nome</label>
+                    <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Ayrton Senna" />
+                  </p>
+                  
+                  <p> 
+                    <label for="email_cad">Seu e-mail</label>
+                    <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@contato.com"/> 
+                  </p>
+                  
+                  <p> 
+                    <label for="senha_cad">Sua senha</label>
+                    <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="senha123"/>
+                  </p>
+                  
+                  <p> 
+                    <input type="submit" value="Cadastrar"/> 
+                  </p>
+                  
+                  <p class="link">  
+                    Já tem conta?
+                    <a href="#paralogin"> Ir para Login </a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        <footer class="footer">
+            <img src="assets/img/logo.png" alt="senninha drive" width="50%" class="logo_footer">
+            <p class="copyright">&copy; 2023 - Senninha Drive LTDA.</p>
+        </footer>
+    </body>
+</html>

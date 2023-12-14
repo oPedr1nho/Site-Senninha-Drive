@@ -1,0 +1,40 @@
+footer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_footer {
+    width: 50%;
+    order: 1; /* Altera a ordem da imagem para aparecer à direita */
+}
+
+form {
+    padding-right: 20%;
+    order: 2; /* Altera a ordem do formulário para aparecer à esquerda */
+    max-width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 200%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 200%;
+    background-color: #FF914D;; /* Cor de fundo verde, ajuste conforme necessário */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
